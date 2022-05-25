@@ -17,7 +17,7 @@ dp = Dispatcher(bot)
 # команда
 @dp.message_handler(commands=['start'])
 async def start_command(message: types.Message):
-    await message.reply("Привет!\nНапиши название города на английском языке, а я пришлю погодную информацию")
+    await message.reply("Привет!\nНапиши название города, а я пришлю погодную информацию")
 
 @dp.message_handler()
 async def pogoda_message(msg: types.Message):
